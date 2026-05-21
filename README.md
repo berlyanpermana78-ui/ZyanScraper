@@ -24,6 +24,5 @@
 ## 📦 Instalasi
 
 ```bash
-git clone https://github.com/username/zyan-scraper.git
-cd zyan-scraper
-npm install
+https://github.com/berlyanpermana78-ui/ZyanScraper.git
+cd Zyanscraper
