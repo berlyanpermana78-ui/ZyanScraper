@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "public/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/auth/register",
+      "dest": "/api/auth/register.js"
+    },
+    {
+      "src": "/api/auth/login",
+      "dest": "/api/auth/login.js"
+    },
+    {
+      "src": "/api/auth/me",
+      "dest": "/api/auth/me.js"
+    },
+    {
+      "src": "/api/auth/logout",
+      "dest": "/api/auth/logout.js"
+    },
+    {
+      "src": "/api/chat/daily",
+      "dest": "/api/chat/daily.js"
+    },
+    {
+      "src": "/api/chat/agent",
+      "dest": "/api/chat/agent.js"
+    },
+    {
+      "src": "/api/chat/image",
+      "dest": "/api/chat/image.js"
+    },
+    {
+      "src": "/api/chat/websearch",
+      "dest": "/api/chat/websearch.js"
+    },
+    {
+      "src": "/api/monitor",
+      "dest": "/api/monitor.js"
+    },
+    {
+      "src": "/api/conversations/messages",
+      "dest": "/api/conversations/messages.js"
+    },
+    {
+      "src": "/api/conversations",
+      "dest": "/api/conversations/index.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
+}
